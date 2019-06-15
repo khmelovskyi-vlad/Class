@@ -6,7 +6,24 @@ namespace Class
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var bohdan = new Person("Bohdan", "Hukivs", 26);
+
+
+            var vlad = new Person("Vlad", "Xmel");
+
+            Person[] persons = new Person[2]
+            {
+                bohdan,
+                vlad
+            };
+
+            foreach (var person in persons)
+            {
+                Console.WriteLine(person.Hello());
+            }
+
+
+            Console.ReadKey();
         }
     }
 }
